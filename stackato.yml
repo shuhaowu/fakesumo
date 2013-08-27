@@ -1,0 +1,14 @@
+name: fakesumo
+framework:
+  type: python
+  runtime: python27
+
+processes:
+  web: gunicorn -b 0.0.0.0:$PORT server:app
+
+mem: 64M
+instances: 1
+services: 
+  {}
+
+ignores: [".git", "update.py", ".venv"]

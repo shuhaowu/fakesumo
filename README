@@ -1,0 +1,9 @@
+Fake SUMO server for the app before we deploy.
+
+You need a working version with the db dump to get the files dumped out so you
+can run osumo
+
+Run `python update.py <base url to sumo>`.
+
+Example: `python update.py http://127.0.0.1:8000`
+
